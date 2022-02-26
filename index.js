@@ -258,7 +258,7 @@ gsap.to('#container_inner', {
 let myNav = document.querySelector('#navbar');
 
 document.onscroll = function() {
-  if (document.body.scrollTop >= 700 || document.documentElement.scrollTop >= 700) {
+  if (window.pageYOffset >= 700 || document.documentElement.scrollTop >= 700) {
     myNav.classList.add('nav-active');
     myNav.classList.remove('nav-transparent');
   }
@@ -268,4 +268,5 @@ document.onscroll = function() {
     myNav.classList.remove('nav-active');
   }
 } 
+
 
