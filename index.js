@@ -88,7 +88,6 @@ lines.forEach(line => {
 
 
 
-
 const form = document.querySelector("#my-form");
     
 async function handleSubmit(event) {
@@ -226,7 +225,7 @@ function deleteNumber(e) {
 
 
 
-gsap.from('#navbar', {opacity:0, y:-30, duration:3, delay:1.5});
+gsap.from('#navbar', {opacity:0, y:-30, duration:2, ease: "power2", delay:1});
 gsap.from('#container', {opacity:0, duration:2, delay:.5});
 
 
