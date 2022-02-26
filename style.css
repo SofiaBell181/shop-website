@@ -16,12 +16,11 @@ body {
     align-items: center;
     padding: 10px;
     z-index: 10;
-    background-color: transparent;
-    transition: all .5s ease-in;
+    transition: all .5s ease;
 }
 
 .nav-active {
-    background-color: #2323239d;
+    background-color: #232323a6;
 }
 
 .nav-transparent {
