@@ -9,6 +9,7 @@ body {
 }
 
 #navbar {
+    margin-top: -20px;
     position:sticky;
     top: 0;
     display: flex;
@@ -19,11 +20,16 @@ body {
     transition: all .5s ease;
 }
 
+
 .nav-active {
     background-color: #232323a6;
 }
 
 .nav-transparent {
+    background-color: transparent;
+}
+
+.nav-style {
     background-color: transparent;
 }
 
@@ -74,6 +80,7 @@ body {
 #nav-mobile {
     display: none;
     background-color: #2323239d;
+    padding: 12px;
 }
 
 .style {
@@ -471,8 +478,8 @@ select {
 #card {
     background: #4d4d4d88;
     width: 100%;
-    height: 350px;
-    bottom: 4px;
+    height: 351px;
+    bottom: 5px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -789,8 +796,8 @@ form {
 }
 
 #buttonUp {
-    position: fixed;
     cursor: pointer;
+    position: fixed;
     right: 15px;
     z-index: 50;
     bottom: 30px;
@@ -861,6 +868,7 @@ footer {
 }
 
 @media all and (max-width:1000px) {
+
     .achor {
         font-size: 17px;
     }
@@ -923,6 +931,13 @@ footer {
     .unorder_list {
         margin-left: 0;
     }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding-top: 0;
+    }
 }
 
 
@@ -939,6 +954,7 @@ footer {
     }
 
     #nav-mobile {
+        margin-top: -20px;
         display: block;
         display: flex;
         justify-content: space-evenly;
@@ -1170,6 +1186,4 @@ footer {
     #first, #second, #three, #four {
         margin-top: 10px;
     }
-
-
 }
